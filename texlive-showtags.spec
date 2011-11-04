@@ -43,6 +43,7 @@ Prints the tag right-aligned on each line of the bibliography.
 %{_texmfdistdir}/tex/latex/showtags/showtags.sty
 %doc %{_texmfdistdir}/doc/latex/showtags/showtags-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/showtags/showtags-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +54,5 @@ Prints the tag right-aligned on each line of the bibliography.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

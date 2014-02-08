@@ -6,7 +6,7 @@
 # catalog-version 1.05
 Name:		texlive-showtags
 Version:	1.05
-Release:	2
+Release:	3
 Summary:	Print the tags of bibliography entries
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showtags

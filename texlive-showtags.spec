@@ -1,18 +1,12 @@
-# revision 20336
-# category Package
-# catalog-ctan /macros/latex/contrib/showtags
-# catalog-date 2010-11-05 08:48:20 +0100
-# catalog-license pd
-# catalog-version 1.05
 Name:		texlive-showtags
-Version:	1.05
-Release:	11
+Version:	20336
+Release:	1
 Summary:	Print the tags of bibliography entries
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showtags
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showtags.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showtags.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showtags.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showtags.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,12 +16,12 @@ Requires(post):	texlive-kpathsea
 Prints the tag right-aligned on each line of the bibliography.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -37,24 +31,10 @@ Prints the tag right-aligned on each line of the bibliography.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.05-2
-+ Revision: 755987
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.05-1
-+ Revision: 719530
-- texlive-showtags
-- texlive-showtags
-- texlive-showtags
-- texlive-showtags
-

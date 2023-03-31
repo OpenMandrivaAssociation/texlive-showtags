@@ -1,6 +1,6 @@
 Name:		texlive-showtags
 Version:	20336
-Release:	1
+Release:	2
 Summary:	Print the tags of bibliography entries
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showtags

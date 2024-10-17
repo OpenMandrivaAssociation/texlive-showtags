@@ -3,7 +3,7 @@ Version:	20336
 Release:	2
 Summary:	Print the tags of bibliography entries
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showtags
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/showtags
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showtags.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showtags.doc.r%{version}.tar.xz
